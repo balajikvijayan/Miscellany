@@ -1,0 +1,147 @@
+GLIOZZO:	Now, that's a description of the evaluation that you can do on a Jeopardy! task, so using the historical data, so that are provided by the 40 or more years of database collected by an institution called Jeopardy! Archive, J! Archive.  They are basically collecting all the historical question and answer pairs including the contestants' names, participants' names, and is the way they answered, if they were correct or not.
+
+So, what we can do using that huge database is two things: we can train Watson, which is something that we will talk about in the future when we talk about machine learning in Watson.  But we can also evaluate Watson; and more importantly, we can set up our evaluation task that is basically the important step in any project.
+
+So, whenever you want to start the project, the best way to start is to set up an evaluation metrics, some type of upper bound, which is your goal, and/or the limit, the theoretical limit for answering questions in Jeopardy!.  Of course, you're going to do more than 100 percent.  But there are also limits due to the ambiguity of language and whatever, and you want to compare it with a baseline.
+
+So, what we did here is just analysis of the historical data representing for each dot in the top the performance of a winner of a Jeopardy! game in the last 40 years.  So, the green dots, blue dots are the description of a specific game for a specific winner.
+
+So, what does it mean if you have a dot in 90 percent precision and 50 percent recall confidence...sorry, on the bottom, you have the percentage of questions that have been actually answered.  So, you can give, we can provide answers to 50 percent of the question with 90 percent precision on that subset, meaning that only one out of nine out of the answers you are providing are correct.
+
+So, this is a typical performance of a winner, is almost in the nineties in terms of real precision and in the fifties in terms of coverage.  So, the reality is that we don't want to play with an average Jeopardy! player; we wanted to win against the grandmaster.
+
+And it was, at that time, and including today...  Actually, today is Watson, but at the time it was Ken Jennings that was the most popular Jeopardy! player in the history of Jeopardy!, won like...I don't remember how many, but several dozens of matches...
+
+>>	Seventy-four.
+
+GLIOZZO:	Seventy-four, correct, in a row.  And I think nobody, you know, never lost a game or something like that.  But Watson, he lost against Watson.  So, the performance of these guys are much better than the other, and we are talking about the same precision, in the 90 percent almost, but with more coverage.  So, he answered correctly to 70 percent or more of the questions.  So, if you want to get there, we had to build a system that has precision, 90 percent, recall...is not recall, the coverage on the 70, 80 percent.
+
+So, what was the state of the art at that time?  So, as Eric in the introduction mentioned, the question answering was/is a research area that for 40 years evolved like competitions and benchmark to evaluate systems.  They were not using Jeopardy! in the past; we invented, let's say, introduced this Jeopardy! task as an evaluation.
+
+But they were using what we call the TREC database, which is a question answering benchmark, shared benchmark, where you can compare your different systems.  So, if you take a state of the art system that is pretty competitive in TREC and you adapt to Watson somehow.  And we had that system at IBM, so in our team there was a system competing at TREC in the standard, let's say, research community.
+
+We applied that system to the Jeopardy! game, and the performance is described by this line here.  So, you didn't get almost coverage in the whatever, but the precision is like 20 percent.  So, it doesn't work.  It is not good.  So, if you compete with this system, it will be a very big problem.
+
+So, what we need to do is a research project, so what was the story, that Dave Ferrucci, the leader of this project at that time, decided to commit with the IBM executives to reach, to fill the gap from the state of the art in 40 years of from 20 percent precision to grow to the 80, 70 percent coverage and 90 percent precision.  So, he committed to do pretty much this. 
+
+So, and the point, what I'm going to do during these lessons is to describe what it takes to reach this level of performance from a baseline system like that to the cognitive system that everybody knows as Watson.  So, what is the technology behind, why we need to use some data or not the other, what has the specific problem but also the broader issues behind building cognitive computing in general.
+
+So, this is going to be the goal of this course: that you understand exactly how to reach that level of performance using the best state of the art semantic technology at least four years ago or three years ago.  Now there is also more going on, but this course is about the Jeopardy! system only.
+
+So, let's look at the way, so this is another video that I wanted to use to conclude this introduction to Jeopardy!, and this video describes the early stages of the project, so showing the people involved but also the problems that they faced to build such a system.  So, the funny errors that Watson came up with, but also the success. 
+[ MUSIC ]
+
+>>	It's going to change how we interface with information.  People are going to ask, how did it do that?  How did it accomplish this task which before we thought only humans could ever hope to do?
+
+ANNOUNCER:	David Hume held this view, that sense and experience are the sole foundation of knowledge.  Watson.
+
+WATSON:	What is empiricism.
+
+BROWN:	Watson is a question answering system.  A question can be posed in natural language, and having read a whole bunch of information -- data, documents -- come up with a very precise answer to that question.
+
+FERRUCCI:	It's an information seeking tool that's capable of understanding your question to make sure that you get what you want and then delivers that content through a natural flowing dialogue.  Do you have one of those?  I don't have one of those, right?
+
+[ MUSIC ]
+
+It's a human standing there with carbon and water versus the computer with all of its silicon and its main memory and its disk.
+
+HOST:	After Germany invaded the Netherlands, this queen, her family and cabinet fled to London.  Maria.
+
+Who is Beatrix.
+
+HOST:	No.  Watson.
+
+WATSON:	Who is Wilhemina.
+
+HOST:	That is correct.
+
+FERRUCCI:	Humans communicate very fluently in natural language.  And that's where computers struggle dramatically, and that's where we want to make them better.
+
+HOST:	This U.S. president negotiated the Treaty of Portsmouth, ending the Russo Japanese War.  Watson.
+
+WATSON:	Who as Theodore Roosevelt.
+
+HOST:	Good for $800.
+
+GONDEK:	Jeopardy! questions are tricky.  They have puns in them, they haver little jokes in them.
+
+HOST:	A famous red-coiffed clown, or just any incompetent fool.  Watson?
+
+WATSON:	Who is Bozo.
+
+HOST:	Nice, good job, Watson.
+
+[APPLAUSE]
+
+FRIEDMAN:	I think we've gone from impressed to blown away.
+
+FERRUCCI:	This is really remarkable performance, and we know of no computer system that can come anywhere close to doing this question answering task. 
+
+HOST:	Watson is the confirmed champion for this game.
+
+FERRUCCI:	But the reality is that being able to win a game at Jeopardy! doesn't mean you've completely conquered the language understanding task -- far from it.
+
+HOST:	In REM's It's the End of the World as We Know It, two of the men with the initials L.B.  Watson.
+
+WATSON:	What is, I Feel Fine.
+
+HOST:	Ooh, no.
+
+GONDEK:	The worst thing is if Watson just crashes int the middle of the game.  That's what you don't want.  But then the second worst thing is if you have some horrible bug where Watson starts getting everything wrong.
+
+WATSON:	What are trousers?
+
+HOST:	No.
+
+WATSON:	What is harness racing?
+
+HOST:	No!
+
+WATSON:	What is Taxi to the Dark Side.
+
+HOST:	No.
+
+WATSON:	What is artificial sweetener.
+
+HOST:	C'mon now, no.
+
+WATSON:	What is milk?
+
+HOST:	No!
+Very nicely done!
+
+[ APPLAUSE ]
+
+>>	We both beat him.
+
+>>	Good for you.
+
+>>	Humans!  Whoo!
+
+FERRUCCI:	This is triage.  There's a million things to consider here.  This is just one.
+
+>>	Yes.  We're going to run out of time.
+
+[ LAUGHTER ]
+
+>>	Now we're going to run out of time.
+
+FERRUCCI:	Our responsibility to the scientific community is to push this technology as hard as we possibly can, because when we get out there in public, what we're demonstrating is what is the state of the art, what can we really do.
+
+[ MUSIC ]
+
+It's limitless, the number of things you could potentially apply this to.
+
+Watson, you have control.
+
+[ MUSIC, LAUGHTER ]
+
+
+It was just a short video to describe the early stage of this project that I'm going to talk about.  So, as you can see, Watson was providing funny errors and answers, and it was very exciting.
+
+So, my story was that when I joined the team, they were at the latest stage of the project and I was here in this auditorium, basically, watching the final game.  And it was amazing, because for me, it was also a very personal experience, and I believe for everybody in the team, it was like a commitment that was taken from the beginning to the end.
+
+We are talking about four years of research, closed research without even publishing anything.  Everything was secret.  And why?  Because it was something extraordinary.  And you can see it, you can feel the emotion of that in this place where we are now, because it was the place where the actual game took place and the final game.  So, this video was about the sparring games, the trial that they did before.
+
+But then in the next lessons I'm going to show you the final Jeopardy! game and also how we get to this point from a technical standpoint.
+[END OF SEGMENT]

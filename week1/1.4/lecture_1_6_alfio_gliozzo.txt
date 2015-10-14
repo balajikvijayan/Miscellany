@@ -1,0 +1,31 @@
+[ MUSIC ]
+
+GLIOZZO:	So, the course is about the Jeopardy! system, the question answering area of research in general.  So, we are talking about question answering, so, and question answering is not an isolated, let's say, research area.  It involves the very deep knowledge in natural language processing, semantic web, machine learning and information retrieval.  Definitely, those four areas are covered by this course.
+
+And what is different in Watson?  Well, the difference is that usually, traditionally, those areas have been taught as independent fields of research, or even if there were some dependency, but usually the research community are not very well close connected.  And definitely the technology, integrating all of the four together, was not there.
+
+So, Watson is the first notable example of how we can put together natural language parsing and semantic web machine learning and information retrieval to come up with a unified solution to accomplish a very difficult task.  So, and the four we are talking about cognitive computing, which is a broader way to conceptualize the four areas together as a paradigm for interacting with the machine in terms of learning experience for the machine and for the user and dialogue and other interaction paradigm.  So, what is it about?  It's more about the theory behind Watson.
+
+So, what the syllabus of the class?  So, the introduction is what I just said.  So, then the second lesson, and actually the second and the third lessons are going to be about the Deep QA architecture that is a pipeline for question answering that has been used by Watson for the Jeopardy! system.  And this is actually now a schema for a new application of Watson in different domains, so this architecture is very important.
+
+The fourth lesson will be about UIMA, which is a framework for semantic integration.  It is an open source framework, so you can combine different analytics including natural language processing analytics or even the semantic web type of component and information retrieval together.
+
+And it runs in parallel, and it's beautiful because you can scale out your system and reduce the time for answering questions from hours to seconds.  And putting that all together is not easy, so, that's a very important component of Watson, and actually is the way the architecture of Watson is working.  So, it's using UIMA.
+
+So, then there will be three different lessons for dive in in the specific areas that I was mentioning before.  So, how natural language processing is used in Watson, what are the parsing and the analytics needed by Watson to answer the Jeopardy! questions.
+So, then I will talk about the use of machine learning in Watson, which is a very primary goal for Watson, was to put together all those things, so knowledge and unstructured data using machine learning as a way to come up with confidence of aggregated evidence from different sources.
+
+So, machine learning is a very basic capability of Watson, and is actually, machine learning is defining the new era of cognitive computing, because a cognitive computing system is supposed to learn; that's the basic ability, so, that's very important to understand it.
+
+And then I will go to the problem that we are facing, that we faced right after the Jeopardy! challenge, that is the domain adaptation problem.  So, how can we take a system that works in an open domain and adapt to a specific problem like question answering in healthcare, or diagnosis or other tasks, minimizing the effort for domain adaptation.
+
+What is the effort for that?  It's usually providing new data, new knowledge, new inference algorithms that can be used to analyze and understand text in the domain.  And we will see that adapting Watson to a specific domain is not as easy as we thought at the beginning; in fact, the research area of the full group I am working on now, it was a matter of, a subject of research for other two years after the Jeopardy! event, for the same team.
+
+And we came up with a solution that works pretty well for medicine; not of course, as substituting a doctor entirely, but it's something that can help a doctor to provide informed decisions in their treatments and recommending drugs, prescription and other things.
+
+Then, a particular way to do domain adaptation, which is actually my research area, and I'm the technical leader of what we call the distributional semantics team.  Distributional semantics is an area of research that the goal is knowledge induction from text.
+
+So, we want to induce knowledge from a huge amount of structured data, and this knowledge is then used by Watson to answer questions and to perform the deep understanding in the analytics behind.  So, distributional semantics is a way to perform domain adaptation minimizing the human labor and needing as much...less as possible rule based system supervision and other knowledge bases.  So, that's basically the content I'm going to cover.
+
+Just, this is the Journal of Research and Development I mentioned before where you can find out all the references for this class, for regarding the Jeopardy! system.  And that's it for today.
+[END OF SEGMENT]

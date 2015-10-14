@@ -1,0 +1,100 @@
+[ MUSIC ]
+
+GLIOZZO:	Then we come to the point of why we chose Jeopardy! and what is Jeopardy!  So, most of you, I assume, are familiar with this show, but also we are broadcasting this class to everywhere in the world, so non-American people will not be very familiar, maybe.  So, I wanted to spend a few slides describing the game itself.
+
+So, Jeopardy! is an American quiz show, so it has quite a long history, so we're talking about several decades of shows.  And it is very successful.  Even today, there are millions of people daily connected.  Actually, when we did our exhibition, the number of viewers...the view increased substantially,so it was also a very great event for the audience and from the entertainment standpoint.
+
+So, what is the game itself?  The game is a question answering game, but the format is reversed.  So, the input \of...so, the question is actually an answer, and the contestant is supposed to come up with the questions that you would ask to get that answer.
+
+So, basically the questions are not called "questions," they're called clues.  And they are the possible answer, and they are categorized in different categories.  For example, "General Science" is one of the possible categories.  But there is actually an unlimited number of categories; it's not a fixed number.
+
+So, every day the organizer can eventually introduce a new category that had never been observed in the past.  So, the output of the system is a phrase in question form.  So, let's take this example.  In the category of General Science, a clue could be, when it by electrons, a phosphor gives off electromagnetic energy in this form.
+
+So, we are looking for "this form," what is the question?  The question is, What is light?  So, that's just an example of how the game works.  And of course, this answer in question format maps 100 percent to a question and answer format.  Just with some syntactic arrangement of the clue, you can come up with a question, and just removing "what is" and giving out the entity is going to be the answer.  So, it is a question answering task.
+
+So, let's look more in depth of a set of samples of Jeopardy! questions and look at why they are difficult and why they are interesting for us as a scientist.  So, what we want to do with Jeopardy! is to have a way to drive and measure the technology of automatic question answering in five dimensions.
+
+So, first of all, we want the system to be open domain.  So, we are talking about everything.  So, I will give you examples of questions -- they are also there -- that you can see they are about every possible subject you can think about.
+
+So, at the same time, they are phrased using very complex language.  They are not just very easy, regular expression like questions; they are very sophisticated.  The way the language is used has a lot of metaphorical uses of terms, and jokes in it, so they are very difficult to understand, especially for me, that I'm not a native speaker.  But anyway, so they are difficult to understand for everybody, I guess.
+
+So, then, the way we want to answer those questions is with very high precision, as I said, because if we are wrong, then you lose the game, you lose the money.  It doesn't make sense.  So, precision is very important.
+
+And actually, we were comparing the performance of Watson with the top champions; it turns out that the precision of their answer is on the 90 percent.  So, we are talking about an almost perfect system when it buzzes in, it should be 90 percent sure that the answer is correct.
+
+So, and we should be able to measure this confidence in order to get to high precision, because how can we provide a high precision in our output is to measure confidence of single decisions.  So, we just give out the decision with high confidence.
+
+And we should be very fast, as I said.  Three seconds is usually the average time needed by a contestant to answer one of those questions.  So, let's take a look at them, and maybe I will ask you if you know the answer.  So, the first one is supposed to be an easy one.  It's just $200, so that's a question that everybody is supposed to answer.
+
+And but it turns out that that's a very difficult for a computer system like Watson.  So, the question is, if you are standing, it's the direction you should look to check out the wainscoting.  So, that's a question that it should be the wainscoting is there and I don't know, exactly not there, anyway.  There is a wainscoting somewhere, and what is the direction?  Any guess?
+
+Correct, so, the answer is what is down.  So, for a human, you don't need a rocket science, so, it is just, it's just common experience of the physical interaction with the rest of the world.  The problem is that the computer doesn't have that type of interaction, it's not grounded in human cognition.
+
+So, for a computer, coming up with this answer is very challenging.  Think about that.  Say if you started a Web search, searching Google for the keywords, do you think you will find the answer explicating written like you have to look down to check out the wainscoting?  I believe it would be almost impossible, nobody will write it, because it's part of our background knowledge.  It is the common sense, and it's not explicitly in any document source.
+
+But sometimes, to answer questions in Jeopardy! and in questions in general, you need to know about the background and the common sense knowledge, otherwise, there is no way to do that.  And formalizing knowledge like that in a knowledge base or in a database is going to be crazy.
+
+So, can you describe everything you do during your life?  So, Watson is able to answer this question in ways that I will explain in the rest of this course.  But that's a challenge for us, to answer this type of question.  Let's look at the second one which is a $1,000 question.
+
+So, it is actually a bit complicated; and in fact, is the first person mentioned by name in The Man in the Iron Mask is this era of a previously by the same author.  So, that's pretty much, any guess?
+
+>>	Who is D'Artagnan?
+
+GLIOZO:	Okay, so, it's true.  The answer is, Who is D'Artagnan?  And so, for a human, it could be challenging if you don't know anything about this story of D'Artagnan and the authors and The Man in the Iron Mask and whatever.  So, what you have to do is to come up with the author of The Man in the Iron Mask, and then you have to know what is all the characters in the previous books, and then coming up with some inference to understand that the right answer is D'Artagnan.
+
+So, these type of things are actually where Watson is particularly strong.  So, the composing questions and coming up with nested sub questions.  I will show you later that Watson can have sophisticated algorithms to do that.  But of course, you have to have a lot of knowledge, so you have to know about this event.
+
+So, where did this knowledge come from?  If you think about the domain here, is literature, so most likely you will find something on Wikipedia or in books because we're talking about this subject here.
+
+The same is for the next question which is not a general, it is very specific domain.  So, it's in the biology domain.  So, in order to answer the third question, in cell division, mitosis splits the nucleus and cytokinesis splits this liquid cushioning the nucleus.  So, in order to answer this question, you have to know about biology.  So, any guess?
+
+>>	Cytoplasm.
+
+GLIOZZO:	Correct.  Okay, so, in this audience we have very good Jeopardy! players.  And anyway, for Watson this is actually kind of an easy question.  Why? Because you can find out the answer for this question looking up in the specific books or documents on biology.  We find several in Wikipedia and even more in the scientific literature.
+
+So, finding like, looking for keyword search and looking for the keyword nucleus, cytokinesis, cushioning the nucleus of something, it will come up with some area, some domain topic where cytoplasm is central, and then you have to somehow refer the different relations to understand the meaning of that text.
+
+But there are ways for Watson to answer this question simply because chances are that it is also explicitly expressed in text somewhere else.  So, it's just finding that text and identifying the right answer, the right entity.
+
+So, let's look at the last one, it's $2,000, so that's a very difficult one.  Of the four countries in the world that the U.S. doesn't have the diplomatic relations with, the one that's farthest north.
+
+>>GROUP RESPONSE:	North Korea.
+
+GLIOZZO:	Correct.  Okay, that's very difficult question for us, but is not impossible.  Why? Because here to answer this question we have first to identify what those four countries are.  And they also vary in time, so it depends on the year.  So, but somehow, looking up in the Web or in Wikipedia, you can find out something that tells you what is the diplomatic relationship.
+
+Then the problem is, how do you answer what is the farthest north?  There is not going to be a text comparing those four countries in geographically because it doesn't make sense to write such an article.  It's just a question that has been invented by the organizer of Jeopardy!.
+
+But who cares about what is north and what is south if you don't have diplomatic relationship with.  So, to come up with the answer, you have to know the geographic location of all of them and do some reasoning, some inference geographically...okay, let's say, geographic inference, to figure out what is the one that is farthest north, which is not a difficult algorithm for a computer if you think about that.
+
+But you have to be able to understand that we are talking about four countries, we are looking for mutual positions, and so on and so forth.  So, there is some geographic logic needed to answer this question.  Okay, now that I wanted to show what are the techniques that Watson uses, at the very high level to answer particular classes of questions.  They're just examples; we will come up with many others in the rest of this class.
+
+So, this is a very typical example, especially in the final Jeopardy! questions, that are not regular Jeopardy! questions, the one that shows up the board, but there is kind of a final question that is supposed to be more difficult.  And so, the human, the contestants have more time to answer and they don't have to buzz in.
+
+So, those kind of questions need some type of reasoning besides knowing the facts.  You have to do many things.  Usually, they are...they're composed, they should be composed in different sub questions.  So, the way Watson works here in this case for the question, when 60 Minutes premiered, this man was U.S. president.
+
+So, is to compose this question in two sub questions.  So, the first one is this one, when 60 Minutes premiered, so this is a question about when this TV show appeared for the first time, which is the year 1968.  So, this is the answer for the first question.
+
+The point is that to answer the full question, you have to know what this answer is and then create a new question that is, in 1968, this man was U.S. president.  And then, you can have to look up somewhere in a knowledge base, in Wikipedia or somewhere, where you can find information about the U.S. presidents.
+
+And it turns out that the correct answer is Lyndon Johnson, which is because he was the president at that time.  So, as you can see, if you just search for the question without decomposing it first, it's not going to work.  You have to know this is composed by two questions and answer the one first one, and then the second.
+
+Think about the error of propagation.  If you're wrong in the first question, it will not work for the second.  So, there are strategies and ways that Watson can use for reducing this type of error propagation.  I will describe them in the rest of this course.  But that's basically much conceptually the way Watson works in this type of question.
+
+So, let's look at another type of question that is very common in Jeopardy!.  They are called common bonds.  What are those questions?  They are questions that are asking you about some concept in common between a set of other concepts expressed in the clue.
+
+And then, in order to come up with the question, you have to come up with something that they have in common, recalling from your background knowledge.  So, let's take an example.  What is in common between shirts, TV remote controls and telephones?
+
+>>	Buttons.
+
+GLIOZZO:	Correct.  So, the things in common here is that all of them have buttons.  So, how do you know that?  If you have the knowledge base, some, if you like, [world net] but a bit more than wordnet because they're going to have many entities in this type of question, you can come up with some concept that is related to every address.
+
+Or, you can also use other technologies like what I do is latent semantic analysis or other ways to find for concepts that are related.  The point is that once you know this concept, then you can start asking the right, answering the right questions.
+
+Let's look at an example of this type of questions.  On hearing of the discovery of George Mallory's body, he told reporters he still thinks he was first.  So, that's a very convoluted question.  So, what is the question about?  So, we are talking about a guy that is George Mallory.  Why it was very famous?
+
+He was famous because he was the first guy that tried to climb the Mount Everest.  But it turns out he died in doing this adventure, and he was not reaching the top of the Mount Everest.  So, the guy that was supposed to be the one that was the first to climb the Mount Everest is another one.  But he didn't believe that there was another guy before him, which is George Mallory.
+
+So, the right answer is, who was the first guy to climb the Mount Everest, it was supposed to be Edmund Hillary.  But then once he learned about the discovery of the body of this other guy, he needed to accept the fact that he was the second.
+
+So, that's basically the way we have to answer these questions.  So, finding commonalities, and in this case, we have Mount Everest, that is the concept in common between what they're talking about, and then from that concept in common, go back to the entity Edmund Hillary and then doing some logic to come up with the right answer.
+[END OF SEGMENT]

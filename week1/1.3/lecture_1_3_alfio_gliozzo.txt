@@ -1,0 +1,127 @@
+[ MUSIC ]
+
+GLIOZZO:	Okay, thank you all for being here.  It is a pleasure for me to teach this course at IBM.  As Lilian said before, I used to teach this course at Columbia for two years, and also in several venues like top conferences in a reduced version.
+
+So, this is pretty much the same course that I taught at Columbia, be it shorter -- so, just 20 hours instead of 30.  And the intent is to be a way to educate the rest of IBM initially to the subject and also to attract talent and hire more people in the future, for example, for the interns.
+
+So, I don't want to spend too much time in introduction, because there was already a very great one.  So, I wanted to start my course with a video, because at IBM, especially for the Jeopardy! event, there was a great communications team, they came up with excellent videos that explains much better than the way I can do.
+
+So, this is video is about the motivation, why we decided to take this grand challenge.
+
+[VIDEO VIGNETTE]
+
+[ MUSIC ]
+
+FERRUCCI:	This is IBM Research, and we're supposed to be pushing the limits of science.  I mean, that's our job, to look for exploratory challenges that help us drive science.
+
+KELLY:	There's two types of innovation.  There's incremental innovation; improving existing products and advancing them in sort of a linear fashion.  But we like to present our teams and our teams even generate for themselves, grand challenges.
+
+FROM NASA VIDEO: "All circuits are a go."
+
+[ LIFT OFF ]
+
+FAN:	So, what makes a grand challenge is, first of all, it has to be difficult, right?  It has to be a challenge.  It has to be inspiring.
+
+[ MUSIC ]
+
+WELTY:	Chess was a grand challenge that was identified in the sixties.  People said that no computer will ever beat a human chess grandmaster.
+
+FERRUCCI:	It would be a landmark to show that we understood computer technology well enough to take on this task that we thought was really restricted to human intelligence.  And we did that with Deep Blue.
+
+KELLY:	Another grand challenge is around using computers to map the human genome.  We called the computer Blue Gene -- "Blue" for IBM; "Gene" for Genomics.  We encouraged people to work across disciplines on these grand challenges.  And it's these sorts of things that produced the big breakthroughs that IBM has done for the past 100 years.
+
+MURDOCK:	Language is an area where from the very beginning of the computer era, people kept expecting computers to do reasonably well at.  They expected computers could talk.  They could understand what it is you're asking for, and then they can do that thing or they can answer that thing.  And so far, the computers have failed to deliver on this promise.
+
+FRASE:	There's something called open question answering that has been a problem in computer science from the beginning.  It's much more difficult than search.  It's not about a single keyword; it's much more the way normal humans communicate.
+
+FERRUCCI:	Humans communicate very fluently in images, in literature, in writing.  People get natural language because it's a human artifact.  They relate those words and those phrases and those ideas back to the way they think.  They ground that information in human cognition, in their human experience.  But that's not written in a formal database language or a formal mathematical language that computers can understand.
+
+MOONEY:	Computers are used to unambiguous things.  Human language, completely the opposite.  Last night I shot an elephant in my pajamas.  How it got in my pajamas, I'll never know.  We know what the pajamas are modifying, but to the computer, it's just as likely that the elephant's wearing pajamas.
+
+FERRUCCI:	That's where computers struggle dramatically, and that's where we want to make them better.
+
+[ MUSIC ]
+
+>>	IBM executives were really interested in doing sort of the next big grand challenge, the next Deep Blue.
+
+>>	Do you have any questions before we begin?  Everything is going to work pretty much exactly the same way it did for you on the show.  The only difference is, we do not have a time limit, so...
+
+GANDEK:	I had heard some rumblings about may be we would take a look at doing question and answer on a big scale, and maybe we would look at doing something that could take on a real challenge, like Jeopardy!.
+
+KELLY:	Deep search and deep analytics was becoming a tougher and tougher problem for general purpose computers.  So, we said, well, let's build a specialized computer to do this and do it in an incredibly fast rate.
+
+IBM Jeopardy! HOST: Let's take a look at our categories.  "Philosophic Ideas."  "Berg-Opolis."
+
+FERRUCCI:	Ultimately, we're not playing Jeopardy!; what we're trying to do is make computers better at processing all that natural language content.  Can you imagine computers communicating more fluently in natural language?
+
+IBM Jeopardy! HOST: In 1778, this man, the elder, suffered a fatal collapse minutes after speaking against Colonial independence.
+
+[ MUSIC ]
+
+>>Watson?
+
+WATSON:	Who is William Pitt.
+
+IBM Jeopardy! HOST: That is correct.  Watson wins the game.
+
+[ CHEERS, APPLAUSE ]
+
+FERRUCCI:	It is irresistible to pursue this, because as we pursue understanding natural language, we pursue the heart of what we think of when we think of human intelligence.
+
+[ MUSIC ] [END OF VIDEO VIGNETTE]
+
+GLIOZZO:	It was just an introduction to the first topic of this course, that is simply describing why the Jeopardy! challenge was relevant for IBM and for us.  And so, this lesson is going to be all about the difficulty of winning a Jeopardy! game against grand champions and the problems behind that from a scientific standpoint.  So, in the rest of the course, in the next lectures, we'll go more deeply into the technical details.  So, right now is just a very high-level introduction.
+
+So, why IBM was interested in this grand challenge; and in general, IBM is interested in grand challenges?  Because they are a way to capture the imagination of people so we can engage our customer but also the scientific community into sort of things that nobody else or maybe just a few other players outside IBM can take.  And this challenge -- in particular, the Jeopardy! challenge -- was definitely one of those projects where only big companies like IBM can succeed.
+
+So, what if engage the scientific community, basically we can envision new ways for computer to impact society.  And most important, we want to drive the advancement with some measurable metrics so we know if we are reaching the state of the art and how can we push farther that limit.  And more importantly, grand challenges are supposed to be also useful for the IBM business.
+
+So, we are not interested in things that have not an economic impact and possible application.  So, IBM, as you know, is one of the largest companies in the world, and we have application in many, many different areas including business intelligence, knowledge discovering and management, government, publishing, healthcare; and, you can list almost any area of computer science there.
+
+And let's see specifically why the question answering task -- and in particular, of the open domain question answering task -- is an example, a great example of how human language should be handled.
+
+The reason is, first of all, this task is a longstanding challenge in artificial intelligence, so we are talking about a task that has been explored in the sixties, then in the seventies.  As Eric Brown said, there are almost now 50 years of history behind this task.
+
+And the open domain version of it is even more challenging than the traditional closed domain.  So, usually, question answering are designed for a specific domain, so that you can build a system for healthcare.  So, in the specific domains, things are going to be a bit easier, because you have less variety of meaning and you need less knowledge.
+
+But even there, there are several challenges that I will describe at the very end of this course, in the Domain Adaptation lesson -- so, how do we adapt Watson to the new domain.
+
+But the open domain system itself is very difficult, because at the end of the day, what we want to do is to answer natural language questions of any type and from a broad domain of knowledge.  The problem is, where is the...what is the knowledge?  So, where does the knowledge come from?
+
+And if you want to find knowledge only in database or semantic [cryp] data, you're going to find a very small percentage of what we really need to answer every of those questions.  So, the knowledge comes from text, from huge corpora.
+
+So, in the Jeopardy! system, we actually use an extension of Wikipedia, so it's not the Web.  But in theory, you can also think about a question answering system from Web data.  So, and this is just the input, but what is the question answering system supposed to do in order to be a successful application of question answering?
+
+It should deliver a precise answer, so telling what, in a very precise way, what is the answer.  So, if it is a factoid type of question where you're looking for an entity, you want to answer with that specific entity, not with something related.
+
+So, you should be able to measure the likelihood of the answer to be correct, which is what we call the confidence of the answer.  Why?  Because if we are not sure the fact that the answer is correct, maybe it's better not to provide any answer, or to ask additional information of the user to complete the question to provide a better answer.
+
+This was not the case in Jeopardy!, because the interaction pattern was "question in, answer out."  But in the real application, that's what we really want, is to come up with a way to understand the likelihood of the answer to be correct; and in case, refine the question itself.
+
+So, you also want to provide justification to the answers, because if you just, for example, in a medical diagnosis problem, if you come up with a diagnosis like cancer, so most likely the user is interested in knowing why, if there is some support for that, otherwise it will be not a very useful answer.
+
+We want to tell why the system came up with that answer, and eventually provide this evidence to an expert that made the final decision.  And in fact, question answering can be seen as a way to perform decision making in a very advanced way.
+
+So, finally, it was a requirement for Jeopardy! that it should be very fast, because if we buzz in after the other players, we are going to lose the game even if we know the right answer.  So, the first Jeopardy!, the time was below three seconds on average, the time to answer a question.
+
+But in the reality, in the real application you want to be also even faster than that, because the user experience of a slow system that takes hours or minutes to come up with a decision is terrible.  So, we want to be fast even for the business motivation.  So, the Jeopardy! event was a way to drive all these four requirements that are actually the requirements of the actual application that we are working on now for the business.
+
+So, it was not just a game; it was just an excuse to try out the best of our technology to succeed in the task, show to everybody around in the world what we can do, and then open a new market to deliver exactly these type of capabilities.
+
+So, let's see why it matters.  So, why do we want to build a question answering system?  So, first of all, because most of our customers at IBM are companies; and in particular, the CIO or the CEO of those companies are our direct contact points.  So, what they do all the time is taking decisions.
+
+So, if you are a CIO of a company, you are a decision maker.  And sometimes, most of the times you need extra information, additional information in order to take a decision with some confidence.  And what is the state of the art today?  So, most of those people use either a Web search engine or some search engine working in the local data.
+And what they do is to, if you have a decision to do somehow they come up with some question in their mind, they try to map those questions into a set of keywords, as you usually do in a search engine, and then the search engine does the job of finding the documents, maybe ranking them by popularity or some other advanced measure.  But usually it is popularity based plus some feedback from the historical use of the system.
+
+And then, it delivered documents that are information objects.  They are not already understood.  So, there is then a need for the decision maker to read the document and understand the content and then figuring out himself what is relevant for his questions and analyzing that content; and finally, coming up with an answer and some evidence supporting that answer.
+
+So, it's basically looking at the output of a search engine and spending time.  And it could take eventually hours or days, it depends on the type of the problem, how easy is it to find that information in the Web or in the local search space.
+
+So, this is a time consuming process, and this time is very valuable.  Our customers, they have good salaries, I guess, so in order to take a decision, how much does it cost?  So, what we can do using a technology like Watson -- or, cognitive computing in general -- is to somehow calibrate this process in a way that most of the effort now is on the machine, on the domain expert.
+
+It is not anymore a person; it is a computer system that does some of the job that before has been done by the decision maker.  So, the task of understanding what the document means and providing the right answer, figuring out what is the right supporting evidence can be automatized.  That's our assumption.  So, if you do that, then the decision making process becomes easier.
+
+You input just a natural language question and the system does the job of understanding the question, producing the answer together with the evidence, analyzing this evidence and coming up with the notion of confidence, how confident I am about this specific answer?  And then, deliver the response together with the evidence and the confidence back to the decision maker.
+
+And the job of the decision maker now is much simpler; it's just considering the answer with the evidence.  And if the system is correct, accept it; otherwise, maybe refine the query.  But it will be easier, because you don't have to read all that yourself.  And so, that's the business case, so, what we want to do is make this process more efficient, so less time consuming.
+[END OF SEGMENT]

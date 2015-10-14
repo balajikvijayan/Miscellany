@@ -1,0 +1,10 @@
+[ MUSIC ]
+
+WU:	Good morning, good afternoon and good evening.  I'm Lilian Wu, a member of IBM's Global University Programs team, and one of the organizers of this course.  You know, I want to welcome all of you to this course on the technologies that makes IBM's Watson Jeopardy! system work.
+
+You know, today when I think about the system, I still feel a sense of amazement of what that system accomplished.  You know, it did something that many people thought would not be possible.  So, it is really, I think, very, very special, this course, because it will be given by three people who were there, who built the system, and I think you will learn a lot.
+
+The principal instructor -- Alfio Gliozzo -- and I hope that this course will be a useful way for you to learn about the technologies inside Watson.  And hopefully, it will help you to apply and extend them.  The course material is based on a two-year...you know, Alfio giving it for two years at Columbia as a graduate course.
+
+And I really do think this course is special, because you will hear from three people who actually built the system and made the impossible happen.  They're Alfio Gliozzo; Eric Brown, who was one of the leaders of the project; Sid Patwardhan, who, software, one of our very star software engineers on the project.
+[END OF SEGMENT]

@@ -1,0 +1,84 @@
+[ MUSIC ]
+
+BROWN:	So, again, good morning, good afternoon, good evening, wherever you might be.  I'm Eric Brown.  I'm currently Director of Watson Algorithms in our Watson Group Innovations organization, and I have the pleasure of being one of the original team members of the research team that built this Watson system originally to compete on Jeopardy!.
+
+And what I'd like to do is just give a little more context for this course, maybe a little broader introduction.  And then, turn it over to Alfio who, in this first lecture, will really give you, I think, more history and motivation for Watson and this Jeopardy! grand challenge.
+
+Let me start with where we are today, and today we are at the beginning or the dawn of what we're calling the cognitive computing era.  And so, what does that mean?  Let me start with the first era, which actually we consider at IBM the tabulating era.  And so, this started maybe in the late 1800s, turn of the century, and was really about machines that were doing counting and tabulation, punch card readers or maybe special purpose machines that did just one thing.  And maybe they did it really well, but were ultimately limited in that single task.  So, that's the tabulating or tabulating era of computing.
+
+You advance then to what we call the programmable era -- so, this is the second of three eras.  And in the programmable computing era, this starts with the dawn of the digital computer around in the 1940s.  And the big change here is that you have general purpose computing systems that are programmable -- they can be reprogrammed to perform different tasks and do a variety of things.  But ultimately, they have to be programmed and are still somewhat constrained in the way they interact with humans.
+
+This is the era that we're currently in; and in fact, I believe the programmable era will perhaps continue to exist indefinitely.  But what we see today and emerging over the last few years is something we call cognitive computing, and this is really the result of a number of factors.
+
+The first one is the emergence of big data.  And so you've all seen these charts that show data trends, and so along the X axis, maybe you have time, and along the Y axis, you have volumes of data.  And there's from the dawn of the programmable computing era, there's this gradual increase of information available.
+
+But then you hit maybe 2000 or certainly the dawn of the Internet and the World Wide Web which, of course, started in the seventies, the Web emerges in the mid-nineties, and then today, you have this sudden exponential increase in the amount of data that's out there.  And it's not just structured data, but in particular, unstructured data.
+
+And so the challenge is, what are the computing technologies that can really leverage all of this unstructured information in a much more natural way?  And we believe that the only way we're really going to survive with this onslaught of data is to create what we're calling cognitive computing systems.
+
+And so, for me, I define a cognitive computing system in a couple of ways.  First, it's a way to extend the boundaries of human cognition.  Today, as we imagine these technologies, they're certainly not about replacing or necessarily even replicating the way that the human brain works; it's more about extending the capabilities of the human brain.
+
+Our ability to reason and think deeply and solve complex problems is really quite impressive.  Our ability as humans to read, analyze and process huge volumes of data is really quite poor.
+
+That, of course, is the strength of the computer system, and the first role of a cognitive computing system is to combine those two strengths into a collaborative situation.  And it's not just searching over huge volumes of information -- that is a step in the direction...
+
+But to really enable humans to make complex decisions, to operate more efficiently, more effectively, to leverage huge volumes of information, the computer system, the cognitive system, needs to combine different pieces of information together, perhaps do some limited reasoning to make connections, to follow relationships, to do enough analysis to pull out the key elements, understand or have knowledge of the problem that the human is trying to solve.
+
+Within that context, bring that information to bear on the problem and then make it very easy for the human to leverage that information, drill down into the evidence and ultimately, solve their problem, make their decisions and move forward as quickly and efficiently as possible.  So, that's the first key element of a cognitive computing system, expanding the boundaries of human cognition.
+
+The second key element is a much more natural interaction between the human and the computer.  And so, one of the characteristics of programmable systems -- and you see this evolving over the last few years -- is that originally to leverage these computer systems, the human had to really adapt the way they worked to the computer interface.  And it was very rigid and inflexible and perhaps inconvenient.
+
+Cognitive computing systems are going to be very different.  There's going to be a much more natural interaction and engagement between the human and the computer.  And you see this is technologies like speech recognition.  So, rather than have to type into the device, I can interact with the device using voice commands.  And we already have powerful voice commands or voice command and control of your device.
+But more general conversational speech recognition and the support for conversational dialogue is still, I think, a bit of an open challenge.  And that technology is rapidly evolving, but will become, again, core to these cognitive computing systems.
+
+So, supporting a more natural interaction with these systems.  Here at IBM Research in Yorktown Heights, we have a cognitive experience laboratory and our whole Think Lab which is set up to demonstrate these kinds of exciting, interesting interactions and human/computer interfaces that we see for the future that will really embed the technology in our environment and completely change the way that we access this technology and apply it to our jobs and our problem solving abilities.
+ 
+A third key element of these cognitive computing applications is the use of learning.  And at the foundation, we define learning in a fairly constrained way, it's machine learning.  And Lilian already mentioned several of you have a background in machine learning, and that's fundamental to a lot of these Watson technologies.
+
+It's used at the level of the overall architecture to combine the results of all the analytics in there; and the individual analytics themselves -- and you'll learn much more about this throughout the course -- may be implemented using statistical techniques and machine learning.  And so, machine learning has been an active area of research in the computer science community for decades, and the application of machine learning is really essential to these cognitive computing applications.
+
+But it goes beyond this core foundational machine learning to more broad notions of learning and a system's ability to adapt over time with use.  This is going to be another key element of these cognitive computing abilities, that as you use these applications, there's a feedback mechanism to capture the results of that interaction and the system must be implemented to learn from that interaction and evolve automatically over time and improve its performance.
+
+The amount of data that the system has to leverage and analyze and the variety and complexity of that means that it ultimately is impossible to constantly reprogram the system to adapt to all of these different data formats, situations, conditions and interactions.  So, these cognitive systems have to be designed with a learning element to constantly evolve.
+
+So, that's where we are today in terms of cognitive computing; now, where does it begin?  What you'll learn in this course is there's a variety of technologies, core research areas that have been combined to create the original Watson system.  And I think one of the real benefits of this course is you get a deep dive or a little bit of a taste of each of these different areas of technology.
+
+So, this is building on now decades of research through a variety of areas in artificial intelligence, natural language processing, knowledge representation and reasoning, machine learning, information retrieval.  And the original motivation or concepts or thoughts on how to leverage computers to solve some of these problems, again, goes back to the dawn of the digital computing age. 
+
+So, you can go back to 1945 and find an essay called As We May Think written by Vannevar Bush.  And so, any of you who work in information retrieval or natural language processing ought to be familiar with this.  In that essay, he imagined a machine that he called the Memex.  And so, this was some machine where he wanted to be able to load every single document, paper, article that he'd ever encountered into this machine.
+
+Now, again, this is 1945, this is long before the Web or Tim Berners-Lee imagined some hyperlinking of documents.  1945, Vannevar Bush said, we'll have these documents with links to other documents that I can find relevant information, I can follow links to find related pieces of information and I can use this machine to help me answer questions and make decisions.
+
+This has inspired a lot of the research that gone on for the last, let's see, 60, 70 years since that first essay came out; and interestingly, actually predicts a lot of the technologies or problems that we'd want to solve.
+
+Vannevar Bush was a very good predictor of technology; in our world, Star Trek is also a great predictor of technology.  And I mention that because, again, if you think about how a cognitive computer ought to act, the computer on Star Trek -- whatever generation you like -- is again, a great example of that.
+
+So, now, in spite of these early ideas in the forties, it's actually taken a long time for us to be able to realize and leverage these technologies in a really meaningful way.  If we fast forward to 1970, you can find an article in the communications of the ACM written by Simmons that's a survey of the state of the art in question answering technology.
+
+So, now question answering is a specialized version or custom version of search where the computer is supposed to be able to take a natural language question, possibly expressed over a broad domain of knowledge, and return a precise answer.  So, this goes beyond Web search which gives you a hit list of documents and instead pulls out the precise answer.
+
+So, people have been working on question answering systems in the fifties and sixties and at 1970, it was worthy of a survey paper that assessed the state of the art.  And not surprisingly, the state of the art had made a lot of progress but still had many open problems.
+
+Now, we fast forward another 30 years and in the mid-nineties...or, maybe 25 years, what starts to evolve is the availability of data.  So, people have been working on search or information retrieval systems, question answering systems for several decades -- the ability to really accelerate that research and progress in those space, ultimately depends on the availability of data.
+
+And in the nineties, NIST -- the National Institute of Science and Technology, sort of a standards organization in the United States...standards and testing?  Yes, sorry.  National Institute of Standards and Testing, thank you, whatever that organization is, that acronym stands for, decides to create a conference called TREC, the Text Retrieval Conference.
+
+And the motivation of this conference is to create big data sets.  And in the early nineties, a big data set and information retrieval was a whole two gigabytes of content; think about that.  This data set which was a collection of documents and correspondingly a set of queries over that set of documents that different research teams could use in common to develop their technology and then come together at an annual conference to compare results.
+
+And as part of this, they developed a methodology for creating relevance judgments -- so, this is essentially the answer key associated with the test set -- and a way to evaluate the quality of these technologies.  And this conference I think was really fundamental to a number of advancements in this whole space of information retrieval, natural language processing, text analytics.  And it evolved into a whole series of special tracks, sub-tracks; and in particular, a question answering track emerged in the late nineties.
+
+And so, at IBM, we were interested in question answering as well and in this building, in this lab here, had a couple of teams working on question answering technology using the TREC conference as a way to drive it and some other U.S. Federal Government sponsored programs to drive the technology and advance it.
+
+But when you get to 2005 or so, and you look at the performance of our technologies -- which were state of the art at the time -- they still fell far short of where they needed to be to apply them in some meaningful, commercial application.
+
+And so, this was sort of the foundation or the starting point for the creation of a grand challenge.  And I won't reveal too much about that yet, because that's what Alfio's going to talk about in this first lecture today.  But suffice it to say, it sort of set the context for the need to really invest in this technology.  And the result of that was Watson as demonstrated on Jeopardy!, and that not only triggered a lot of excitement within IBM, but I think outside IBM, triggered a lot of excitement as well.
+And I don't know if I'd be so bold to say it was the cause of, but is certainly was timely and came about at the same time as some renewed interest in artificial intelligence in general.  And if you look around the landscape in 2011, over the last three years, you see really a rapid growth in interest in these artificial intelligence technologies.
+
+Machine learning, in particular, which is foundational to a lot of the Web technologies that we leverage today, but the ability to leverage natural language, unstructured information in a wide variety of ways has really, I think, taken off in interest.
+
+And this course is extremely relevant and timely, because it provides not only a view into how Watson as designed for Jeopardy! works, but some foundational information about all of these different technologies that will help you get a better understanding of what's going on in the community and industry in general.
+
+So, I think you'll see this chart come up later in Alfio's lecture, but this is pictures of the original research team or extended research team from IBM Research that built the Watson Jeopardy! system.  So, we started in sort of late 2006, early 2007, with about 13 people and we were actually down in the Hawthorne building when we still had the T.J. Watson labs spread across two locations.
+
+And then over the course of the four-year project, expanded to include researchers from our global research labs in Haifa and the Tokyo Research Lab, the China Research Lab.  We may have had some hardware support from Austin, as well.  And by the end of the project, the team had grown to about 25 or 30 folks, and then additional support from marketing and communications and all sorts of relationship management 
+[END OF SEGMENT]
