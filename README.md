@@ -46,12 +46,14 @@ Structure of the Class
 --------------------------------------------------------------  
 This course will employ a ["flipped" classroom](http://en.wikipedia.org/wiki/Flipped_classroom) model. What that means is that lectures will take place *outside* of class, via the MOOC course developed by Drs. Alfio Gliozzo, Siddharth Patwardhan, Eric Brown, and Lilian Wu. Classroom time will be devoted to resolving questions that have arisen and, primarily, for doing project work. 
 
-Typical preparation outside of class:
+Typical preparation outside of class:  
+
 1. Watch videos, read chapters, and complete workbooks
 2. Ask questions and raise issues in Slack channel
 3. Review Exercises
 
-A typical class will follow this structure:
+A typical class will follow this structure:  
+
 1. Complete On Your Own (OYO) activity
 2. Review and discussion of lecture materials
 3. iRAT (individual Readiness Assessment Test)
