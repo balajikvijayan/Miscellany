@@ -14,6 +14,7 @@
         + Watch: Introduction - Characteristics of Cognitive Computing
             * Welcome (02:09)
             * Characteristics of Cognitive Computing (17:26)
+        + Answer [questions](http://goo.gl/forms/F0HL3KJPXK)
         + Optional:
             * Read [The Era of Cognitive Computing](http://www.redbooks.ibm.com/abstracts/redp4955.html)
             * Browse [IBM Watson](http://www.ibm.com/smarterplanet/us/en/ibmwatson/)
@@ -23,6 +24,7 @@
         + Watch: 
             * The Jeopardy! Challenge (16:09)
             * The challenge of winning Jeopardy! (15:41)
+        + Answer [questions](http://goo.gl/forms/hqvOGbQNcU)
         + Familiarize yourself with [J! Archive](http://www.j-archive.com/)
 4. __Watson Architecture Overview__
     - Before Class:
@@ -31,3 +33,4 @@
             * The Watson Course (05:40)
         + Start Lecture 2: Deep Question Answering Architecture
             * Watson Architecture Overview (17:07)
+        + Answer [questions](http://goo.gl/forms/0Ztcxeri5Q)
