@@ -5,8 +5,7 @@ DSCI6008: Special Topics in Data Science
 * [Nir Kaldero](mailto:nir@galvanize.com)  
 * [Mike Tamir](mailto:mtamir@galvanize.com)  
 
-**Class Location:** 44 Tehama St, 3rd Floor, Room 206
-**Lab Time:** 2-4 weekdays  
+**Class Location:** 44 Tehama St, 3rd Floor, Room 206  
 **Class Time:** 4:00 to 5:20 PM M,T,Th,F  
 **Office Hours:** Wednesday by Appointment    
 
@@ -113,31 +112,27 @@ Tentative Schedule
     2. Characteristics of Cognitive Computing
     3. The challenge of winning Jeopardy!
     4. Watson Architecture Overview
-2. DeepQA Architecture
+2. [DeepQA Architecture](week2/week2.md)
     1. Deep Question Answering Architecture
     2. Semantic Integration and Machine Learning
     3. Natural Language Processing
     4. UIMA at IBM Watson
-3. Unstructured Information Management Architecture
+3. [Unstructured Information Management Architecture](week3/week3.md)
     1. UIMA Overview & SDK Setup
     2. Annotators and Analysis Engines
-    3. Collection Processing Engine
-    4. Application Development
-4. Structured Knowledge in IBM Watson
-    1. The Use of Structured Knowledge in Watson
+    3. Building UIMA Analysis Engines
+    4. Getting started with Watson Developer Cloud and Bluemix
+4. [Planning Your Cognitive Application](week4/week4.md)
+    1. Watson Developer Cloud
     2. Type Coercion
-    3. Temporal and Spatial Reasoning and Evidence Diffusion
-    4. Adapting Watson to Other Domains
-5. Domain Adaptation Methodology
-    1. Building Your Watson Cognitive Application
-    2. Content Adaptation
-    3. Training Adaptation
-    4. Functional Adaptation
-6. __NO CLASS —__ 🌽__Holiday__🌽
-7. Distributional Semantics
-    1. Linguistic Background and Latent Semantic Analysis
-    2. Distributional Similarity and Taxonomy Induction
-    3. JoBimText & Relation Extraction
+    3. Planning Your Cognitive Application
+    4. Building Your Cognitive Application
+5. [Domain Adaptation](week5/week5.md)
+    1. Content Adaptation
+    2. Functional Adaptation
+    3. Distributional Semantics
     4. The Watson Knowledge Graph
-8. Special Topics TBD by instructors and students
+6. __NO CLASS —__ 🌽__Holiday__🌽
+7. Special Topics TBD by instructors and students
+8. D3.js - Guest Lecturer - Jonathan Dinu
 9. Final Presentations

@@ -19,11 +19,12 @@
 
 2. __Annotators and Analysis Engines__ 
     - Before Class: Read [Chapter 1. Annotator and Analysis Engine Developer's Guide](https://uima.apache.org/d/uimaj-current/tutorials_and_users_guides.html#ugr.tug.aae)
-    - Lab:
-        + Follow the instructions for [Writing My First UIMA Annotator](https://uima.apache.org/doc-uima-annotator.html)
-        + Create a component that annotates email addresses (feel free to borrow a regex from the web, but be careful because Java regex ≠ Python regex) 
+    - Lab: Follow the instructions for [Writing My First UIMA Annotator](https://uima.apache.org/doc-uima-annotator.html)
 
-3. __Watson Developer Cloud I__
+3. __Building UIMA Analysis Engines__
+    - Lab: Create a component that annotates email addresses (feel free to borrow a regex from the web, but be careful because Java regex ≠ Python regex) 
+
+4. __Getting started with Watson Developer Cloud and Bluemix__
     - Before Class:
         + Browse the [Watson Services Documentation](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/)
         + Read [Getting started with Watson Developer Cloud and Bluemix](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/getting_started/)
@@ -34,13 +35,3 @@
     - Lab: 
         + [Sample Python Application for the IBM Watson Personality Insights Service](https://github.com/watson-developer-cloud/personality-insights-python)
 
-4. __Watson Developer Cloud II__
-    - Before Class:
-        + Prepare 8-10 minute presentation on (you are welcome to swap with someone else if you wish so long as each topic gets covered):
-            1. Alexander Barriga - Question and Answer
-            2. Andrew Huang - Retrieve and Rank
-            3. Balaji Vijayan - Personality Insights
-            4. Brandon Fetters - Relationship Extraction
-            5. Katherine Aquino - Tone Analyzer
-            6. Michael Mansour - Concept Insights
-            7. Michael Thorne - Natural Language Classifier
