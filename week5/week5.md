@@ -20,7 +20,8 @@
 3. __Distributional Semantics__
     - Before Class - Start Lecture 8: Distributional Semantics
         + Linguistic Background and Latent Semantic Analysis (27:26)
-        + Distributional Similarity and Taxonomy Induction (20:13)   
+        + Distributional Similarity and Taxonomy Induction (20:13)  
+    - Optional: Read [How can lexis be organised?](https://courses.nus.edu.sg/course/elltankw/history/Vocab/B.htm) 
 
 4. __The Watson Knowledge Graph__
     - Before Class - Finish Lecture 8: Distributional Semantics
