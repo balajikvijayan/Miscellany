@@ -1,9 +1,11 @@
 DSCI6008: Special Topics in Data Science
 ===============================================================
 **Instructors:**  
-* [Alessandro Gagliardi](mailto:alessandro@galvanize.com)  
-* [Nir Kaldero](mailto:nir@galvanize.com)  
-* [Mike Tamir](mailto:mtamir@galvanize.com)  
+
+* [Alessandro Gagliardi](mailto:alessandro@galvanize.com)
+* [Jonathan Dinu](mailto:jonathan@galvanize.com) (Guest Lecturer)
+* [Nir Kaldero](mailto:nir@galvanize.com)
+* [Mike Tamir](mailto:mtamir@galvanize.com)
 
 **Class Location:** 44 Tehama St, 3rd Floor, Room 206  
 **Class Time:** 4:00 to 5:20 PM M,T,Th,F  
@@ -22,9 +24,9 @@ Description of the Course
 
 ### Prerequisites
 
-* DSCI6003: Machine Learning and Data Analysis  
-* DSCI6004: Natural Language Processing  
-* DSCI6007: Distributed and Scalable Data Engineering  
+* DSCI6003: Machine Learning and Data Analysis
+* DSCI6004: Natural Language Processing
+* DSCI6007: Distributed and Scalable Data Engineering
 
 Standards
 --------------------------------------------------------------  
@@ -85,6 +87,8 @@ Resources
 --------------------------------------------------------------  
 The primary resource for this class will be the [Cognitive Computing MOOC](https://www-304.ibm.com/services/weblectures/dlv/protected/GateProt.wss?handler=LoginSSL&action=requestlogin&customer=watsonwww&offering=wtsn&curriculum=wtm1_cur&next_offering=wtm1) offered through the [IBM Watson Academy](https://www-304.ibm.com/services/weblectures/watsonacademy). Other resources including [YouTube Videos](https://www.youtube.com/playlist?list=PLT8KEDgXsE6R0prxxCEDLxxELbdKyE8qO) and [papers](http://researcher.watson.ibm.com/researcher/view_group_pubs.php?grp=2099) will be assigned during the course.
 
+**Addendum:** The contents of the special issue of IBM Journal of Research and Development on Watson can be found at: [brenocon.com/watson_special_issue](http://brenocon.com/watson_special_issue/)
+
 Course Requirements
 --------------------------------------------------------------  
 ### Attendance
@@ -134,5 +138,9 @@ Tentative Schedule
     4. The Watson Knowledge Graph
 6. __NO CLASS —__ 🌽__Holiday__🌽
 7. Special Topics TBD by instructors and students
+    1. A/B Testing - Alessandro Gagliardi
+    2. MAP, MOM, MLE - Jared Thompson
+    3. Probability - Mike Tamir
+    4. Product Metrics - Nir Kaldero
 8. D3.js - Guest Lecturer - Jonathan Dinu
 9. Final Presentations
