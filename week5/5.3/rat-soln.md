@@ -1,0 +1,10 @@
+answers
+--------
+1. What is the benefit of applying distributional semantics to a new domain?
+	c) The automatic acquisition of domain-specific knowledge bases describing the new domain - Domain adaptation requires machine learning experts, natural language processing experts, and domain experts to work together to develop domain-specific knowledge bases. Distributional semantics provides an unsupervised, and therefore totally automatic, way to acquire knowledge in the new domain, replacing or complementing the human work needed for knowledge engineering.
+2. Which of the following is NOT a feature of Latent Semantic Analysis 2.0? 
+	d) It acquires Paradigmatic Relations as well as domain relations between words. - A keyword-based search system is only able to retrieve documents that explicitly express the terms in the query. It does not take into account the similarity between terms themselves to improve the final ranking. In contrast, Latent Semantic Analysis allows you to measure the topic similarity of words and texts and considers second-order relations without using preexisting structured knowledge, such as dictionaries. Latent Semantic Analysis 2.0 uses an advanced mechanism for vector propagation, which tries to predict the topicality of unknown concepts in an ontology using the known terms as seeds.
+3. Distributional Similarity is a technique which:
+	c) Measures the extent to which specific words can be substituted when considering local contexts. - Distributional Similarity is a technique that measures the similarity of words by analyzing their local context or dependencies. The goal of distributional similarity is to identify words that can be substituted in the same contexts and still generate meaningful sentences.
+4. What makes sense clustering possible?
+	a) Analysis of properties in common between groups of words - Sense clustering is enabled by analysis of word features, properties, and contexts. Words with similar features and contexts are grouped together in a cluster.

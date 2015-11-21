@@ -1,0 +1,13 @@
+answers
+--------
+1. After we replace the content that Watson uses for answering medical questions with medical content, Watson's question-answering accuracy is about 26%.
+	1. After content adaptation, when Watson is trained on medical questions for a particular topic and the top 50 answers to each question are vetted by doctors, what is the change in Watson's question-answering accuracy?
+		- Training adaptation involves training Watson on questions as well as vetting the answers by experts. It's the second stage of domain adaptation. In the medical domain adaptation, training adaptation increases Watson's accuracy in answering questions to about 37% from the 26% after content adaptation, an 11% increase.
+	2. After functional adaptation for the medical domain, what is the change in Watson's question-answering accuracy? 
+		- Functional adaptation involves giving Watson the capability to understand domain-specific terms, concepts, entities, and relations. It helps Watson in using the right knowledge and actions for reasoning and advanced inference. In the medical domain adaptation, functional adaptation increases Watson's accuracy in answering questions to about 52% from the 37% after training adaptation, a 15% increase.
+2. Topicalized Wide Relation and Entity Extraction, TWREX, helps Watson to:
+	 a) Automatically extend the coverage of knowledge bases - TWREX is a relation-extraction system. Watson uses TWREX to collect new relations between entities and concepts and extend the coverage of a domain-specific knowledge base.
+3. Latent Semantic Analysis 2.0 (LSA 2.0) helps extend the coverage of Watson's domain-specific knowledge bases by:
+	 a) Statistically measuring the similarity between concepts in an ontology - LSA 2.0 helps extend the coverage of Watson's domain-specific knowledge bases by statistically measuring the similarity between concepts in ontologies. It gathers statistics from the distribution of words in corpora and measures the similarity between their corresponding concepts in the ontology using a vector propagation algorithm.
+4. Passage justification is a functionality of Watson that helps:
+	c) Provide evidence for correct answers. - Passage justification is a functionality that provides supporting evidence for a correct answer. It does so by providing the sources that tell you that the answer is actually correct. Experts in a domain not only require the correct answer to a question but also evidence that tells them why the answer is correct.
