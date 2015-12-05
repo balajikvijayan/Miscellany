@@ -7,7 +7,9 @@
 
 1. Complete the [Javascript Warmup](javascript-warmup.md)
 2. Create a rectangle of `width` 960px and `height` 500px composed of 5000 `orange` and `grey` circles.  For extra credit implement [collision detection](http://bl.ocks.org/mbostock/3231298) on the particles.
+
   ![](https://gist.githubusercontent.com/Jay-Oh-eN/b84846a0511acfeaf925/raw/dc33b828def4f724168874ab9408e4a78a050200/thumbnail.png)
+  
 3. Adapt the code for your to color each circle to create an orange circle or radius 150px centered at the middle of the canvas.
 
   > For reference the equation of a circle centered at (h, k) is: (x - h)^2 + (y - k) ^ 2 = r^2 

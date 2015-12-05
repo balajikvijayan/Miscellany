@@ -39,7 +39,7 @@ The [data](http://insideairbnb.com/get-the-data.html) comes from [Inside AirBnB]
 
 ### Homework
 
-* [DOM manipulation with D3](week8/day1.md)
+* [DOM manipulation with D3](day1.md)
 * Finish any of the Udacity video (Lesson 1) you haven't already watched.
 
 ## Day 2: Getting Started with Visualization
